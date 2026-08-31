@@ -1,0 +1,7 @@
+.vscode/
+.idea/
+build/
+*.bin
+*.elf
+*.map
+*.log

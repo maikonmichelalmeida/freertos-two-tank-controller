@@ -1,0 +1,13 @@
+name: Firmware check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Arduino/FreeRTOS firmware syntax
+        run: make check
