@@ -1,8 +1,8 @@
 # Controlador de dois tanques com FreeRTOS
 
-Projeto acadêmico de Sistemas de Tempo Real para ESP32/Arduino. O firmware simula uma planta com dois tanques, três válvulas e uma resistência de aquecimento. Tarefas concorrentes controlam nível, transferência, temperatura e descarga; um mutex protege o estado compartilhado.
+Fiz este projeto na disciplina de Sistemas de Tempo Real usando ESP32/Arduino. O programa simula dois tanques, três válvulas e uma resistência. Separei o controle de nível, transferência, temperatura e descarga em tarefas do FreeRTOS e usei um mutex para o estado compartilhado.
 
-## O que este projeto demonstra
+## Como organizei o controle
 
 - decomposição do controle em tarefas periódicas do FreeRTOS;
 - sincronização de estado compartilhado com mutex;
